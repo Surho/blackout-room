@@ -357,6 +357,33 @@
         display: block;
     }
 
+    .rooms__item:hover .rooms__about {
+        transform: none;
+        transition: none;
+    }
+
+    .rooms__item--chambre.rooms__item:hover {
+        background:  
+        linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.9)),
+        url("../img/rooms_img1.jpg");
+        background-size: cover;
+    }
+    
+    .rooms__item--expiriance.rooms__item:hover {
+        background:  
+        linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.9)),
+        url("../img/rooms_img2.jpg");
+        background-size: cover;
+    }
+    
+    .rooms__item:hover .rooms__item-description {
+        opacity: 1;
+    }
+
+    .rooms__about {
+        display: none;
+    }
+
     .rooms__item h3 {
         font-size: 18px;
         padding-left: 70px;
