@@ -31,7 +31,7 @@ $(document).ready(function() {
       $('.rooms__list').slick({
         centerMode: true,
         slidesToShow: 1,
-        arrows:true ,
+        arrows: true ,
         infinite: true
       });
       sliderMode = true;
