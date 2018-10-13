@@ -762,8 +762,18 @@ h2 {
     margin-top: 45%;
     padding-left: 0;
     padding-bottom: 10px; }
+  .rooms__item:hover .rooms__item-description {
+    opacity: 1; }
   .rooms__stats {
-    padding-left: 60px; } }
+    padding-left: 60px; }
+  .rooms__item--chambre.rooms__item:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img1.jpg");
+    background-size: cover; }
+  .rooms__item--expiriance.rooms__item:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img2.jpg");
+    background-size: cover; }
+  .rooms__about {
+    display: none; } }
 
 @media (max-width: 420px) {
   .rooms__item h3 {
