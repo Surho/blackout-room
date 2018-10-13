@@ -39,7 +39,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: transparent
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -67,23 +67,25 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: rgba(111, 92, 241, 1);;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 .slick-prev
 {
-    left: -25px;
+    z-index:999;
+    left: 25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 25px;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +99,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 25px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 25px;
 }
 .slick-next:before
 {
@@ -192,7 +194,7 @@
     text-align: center;
 
     opacity: .25;
-    color: #b89a51;
+    color: #533EE0;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +202,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: #b89a51;
+    color: #533EE0;
 }

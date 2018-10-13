@@ -5,12 +5,13 @@ $(document).ready(function() {
   $('.rooms__list').slick({
     centerMode: true,
     slidesToShow: 1,
-    arrows: false
+    arrows: true,
+    infinite: false
   });
 
   sliderMode = true;
 
-  if(currentWidth > 560) {
+  if(currentWidth > 545) {
     $('.rooms__list').slick('unslick');
     sliderMode = false;
   }
@@ -21,17 +22,17 @@ $(document).ready(function() {
   window.addEventListener('resize', () => {
     currentWidth = document.documentElement.clientWidth;
     console.log(currentWidth);
-    if(currentWidth > 560 && sliderMode) {
+    if(currentWidth > 545 && sliderMode) {
       $('.rooms__list').slick('unslick');
       sliderMode = false;
     } 
 
-    if(currentWidth < 560 && !sliderMode) {
+    if(currentWidth < 545 && !sliderMode) {
       $('.rooms__list').slick({
         centerMode: true,
-        centerPadding: '50px',
         slidesToShow: 1,
-        arrows: false
+        arrows: true,
+        infinite: false
       });
       sliderMode = true;
     } 
