@@ -552,26 +552,20 @@ h2 {
 .rooms__item:hover {
   border: 2px solid #5335e3; }
 
-.rooms__item-info {
-  box-sizing: border-box;
-  padding: 20px 30px;
-  padding-bottom: 10px;
-  text-align: left; }
-
 .rooms__item--chambre.rooms__item {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img1.jpg");
-  background-size: cover; }
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img1.jpg"); }
 
 .rooms__item--expiriance.rooms__item {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img2.jpg") no-repeat top center;
-  background-size: cover; }
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/rooms_img2.jpg") no-repeat top center; }
 
 .rooms__item--chambre.rooms__item:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/rooms_img1.jpg");
-  background-size: cover; }
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/rooms_img1.jpg"); }
 
 .rooms__item--expiriance.rooms__item:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/rooms_img2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/rooms_img2.jpg"); }
+
+.rooms__item--chambre.rooms__item,
+.rooms__item--expiriance.rooms__item {
   background-size: cover; }
 
 .rooms__item:hover .rooms__item-description {
