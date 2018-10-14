@@ -636,6 +636,7 @@ h2 {
   margin-right: 0; }
 
 .rooms__reserve {
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
