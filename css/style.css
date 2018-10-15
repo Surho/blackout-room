@@ -448,19 +448,12 @@ h2 {
 .opened__menu--body {
   position: fixed; }
 
-.gift-page .container {
+.container {
   box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
-  width: 1200px; }
-
-@media (max-width: 768px) {
-  .gift-page .container {
-    width: 768px; } }
-
-@media (max-width: 340px) {
-  .gift-page .container {
-    width: 340px; } }
+  padding: 0 25px; }
 
 .rooms {
   padding-top: 2em;
