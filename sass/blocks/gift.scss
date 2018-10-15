@@ -1,0 +1,137 @@
+.gift {
+    margin-top: 100px;
+}
+
+.gift__intro {
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 300px;
+    padding-bottom: 400px;
+}
+
+.gift__title {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'OpenSans-Bold', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 7px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.gift__title span {
+    font-family: 'OpenSans-Light', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.gift__text {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+
+    &--main {
+        width: 70%;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}   
+.gift__title,
+.gift__text {
+    width: 650px;
+}
+
+.gift__img {
+    position: absolute;
+    top: -70px;
+    left: -370px;
+}
+
+.gift__button {
+    display:block;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'OpenSans-Semibold', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #533ee0;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.gift__button:hover {
+    opacity: 1;
+}
+
+.gift__text a {
+    color: yellow;
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    .gift__img {
+        position: absolute;
+        width: 600px;
+        height: auto;
+        top: 30px;
+        left: -120px;
+    }
+
+    .gift__title {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-family: 'OpenSans-Bold', Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+
+    .gift__title,
+    .gift__text {
+        width: 400px;
+    }
+
+    .gift__text--main {
+        width: 100%;
+    }
+
+    .gift__intro {
+        box-sizing: border-box;
+        position: relative;
+        padding-left: 250px;
+        padding-bottom: 200px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 340px) {
+    .gift__title,
+    .gift__text {
+        width: 100%;
+        text-align: center;
+    }
+    .gift__img {
+        width: 380px;
+        position: absolute;
+        top: 220px;
+        left: -85px;
+    }
+
+    .gift__intro {
+        padding-left: 0px;
+        padding-bottom: 180px;
+    }
+}
