@@ -2425,7 +2425,7 @@ address {
     padding-bottom: 200px;
     margin-bottom: 50px; } }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
   .gift__title,
   .gift__text {
     width: 100%;
