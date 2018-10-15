@@ -433,12 +433,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%; }
+  width: 100%; }
 
 body {
   background-color: black;
-  width: 100%;
-  min-width: 1200px; }
+  width: 100%; }
+
+body.gift-page {
+  min-width: 320px; }
 
 h2 {
   font-family: "codePro", "Geneva", "sans-serif"; }
@@ -449,13 +451,17 @@ h2 {
 .opened__menu--body {
   position: fixed; }
 
+@media (max-width: 1200px) {
+  body.gift-page {
+    min-width: 1200px; } }
+
 @media (max-width: 768px) {
   body.gift-page {
     min-width: 768px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 336px) {
   body.gift-page {
-    min-width: 320px; } }
+    min-width: 336px; } }
 
 .container {
   box-sizing: border-box;
@@ -476,7 +482,7 @@ h2 {
     padding: 0 50px;
     margin: 0 auto; } }
 
-@media (max-width: 320px) {
+@media (max-width: 336px) {
   .gift-page .container {
     width: 320px;
     padding: 0 30px;
@@ -2334,9 +2340,13 @@ address {
 .concept__instructions {
   margin-top: 40px; }
 
-.gift-page {
+.gift-page main {
   background: linear-gradient(rgba(6, 4, 28, 0.7), #06041c), url("../img/gift_background.jpg") no-repeat center center, #05031b;
   background-size: cover; }
+
+.gift-page main {
+  width: 100%;
+  height: 100%; }
 
 .gift {
   margin-top: 100px; }
@@ -2436,7 +2446,7 @@ address {
     padding-bottom: 200px;
     margin-bottom: 50px; } }
 
-@media (max-width: 360px) {
+@media (max-width: 336px) {
   .gift__title,
   .gift__text {
     width: 100%;
@@ -2444,7 +2454,7 @@ address {
   .gift__img {
     width: 380px;
     position: absolute;
-    top: 220px;
+    top: 270px;
     left: -85px; }
   .gift__intro {
     padding-left: 0px;

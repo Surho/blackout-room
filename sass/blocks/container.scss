@@ -1,4 +1,4 @@
-.container {
+  .container {
     box-sizing: border-box;
     min-width: 320px;
     max-width: 1200px;
@@ -21,7 +21,7 @@
     }
   } 
 
-  @media(max-width: 320px) {
+  @media(max-width: 336px) {
     .gift-page .container {
       width: 320px;
       padding: 0 30px;

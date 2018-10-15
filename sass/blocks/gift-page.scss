@@ -1,6 +1,11 @@
-.gift-page {
+.gift-page main {
     background: linear-gradient(rgba(6,4,28,0.7), rgba(6,4,28,1)),
     url("../img/gift_background.jpg") no-repeat center center,
   #05031b;
     background-size: cover;
+}
+
+.gift-page main {
+  width: 100%;
+  height: 100%;
 }

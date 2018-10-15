@@ -2,13 +2,16 @@ html,
 body {
     margin:0;
     padding: 0;
-    height: 100%;
+    width: 100%;
 }
 
 body {
     background-color: black;
     width: 100%;
-    min-width: 1200px;
+}
+
+body.gift-page {
+    min-width: 320px;
 }
 
 h2 {
@@ -23,14 +26,21 @@ h2 {
     position: fixed;
 }
 
+@media(max-width: 1200px) {
+    body.gift-page {
+        min-width: 1200px;
+    }
+}
+
+
 @media(max-width: 768px) {
     body.gift-page {
         min-width: 768px;
     }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 336px) {
     body.gift-page {
-        min-width: 320px;
+        min-width: 336px;
     }
 }
