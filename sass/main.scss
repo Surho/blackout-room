@@ -2,7 +2,6 @@ html,
 body {
     margin:0;
     padding: 0;
-    min-width: 1200px;
 }
 
 body {
@@ -23,17 +22,15 @@ h2 {
     position: fixed;
 }
 
-@media(max-width: 768px) {
-    html,
-    body {
-        min-width: 768px;
-    }
-}
+// @media(max-width: 768px) {
+//     body {
+//         min-width: 768px;
+//     }
+// }
 
-@media(max-width: 340px) {
-    html,
-    body {
-        min-width: 340px;
-    }
-}
+// @media(max-width: 340px) {
+//     body {
+//         min-width: 340px;
+//     }
+// }
 
