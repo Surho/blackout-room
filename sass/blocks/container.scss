@@ -6,3 +6,26 @@
     padding: 0 25px;
   }
   
+  .gift-page .container {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media(max-width: 768px) {
+    .gift-page .container {
+      width: 768px;
+      padding: 0 50px;
+      margin: 0 auto;
+    }
+  } 
+
+  @media(max-width: 320px) {
+    .gift-page .container {
+      width: 320px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+  } 
+
