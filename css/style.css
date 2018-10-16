@@ -50,6 +50,9 @@
   font-size: 14px;
   font-family: "Arial", Helvetica, sans-serif; }
 
+.gift-page .intro__header {
+  width: 100%; }
+
 .intro.intro--rooms {
   width: auto;
   height: auto;
@@ -485,7 +488,7 @@ h2 {
 @media (max-width: 336px) {
   .gift-page .container {
     width: 320px;
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0 auto; } }
 
 .rooms {
@@ -2349,6 +2352,7 @@ address {
   height: 100%; }
 
 .gift {
+  width: 100%;
   margin-top: 100px; }
 
 .gift__intro {
@@ -2446,7 +2450,7 @@ address {
     padding-bottom: 200px;
     margin-bottom: 50px; } }
 
-@media (max-width: 336px) {
+@media all and (max-width: 336px) {
   .gift__title,
   .gift__text {
     width: 100%;
@@ -2454,7 +2458,7 @@ address {
   .gift__img {
     width: 380px;
     position: absolute;
-    top: 270px;
+    top: 210px;
     left: -85px; }
   .gift__intro {
     padding-left: 0px;

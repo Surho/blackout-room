@@ -1,4 +1,5 @@
 .gift {
+    width: 100%;
     margin-top: 100px;
 }
 
@@ -80,6 +81,7 @@
     text-decoration: none;
 }
 
+
 @media(max-width: 768px) {
     .gift__img {
         position: absolute;
@@ -117,7 +119,7 @@
     }
 }
 
-@media(max-width: 336px) {
+@media all and (max-width: 336px) {
     .gift__title,
     .gift__text {
         width: 100%;
@@ -126,7 +128,7 @@
     .gift__img {
         width: 380px;
         position: absolute;
-        top: 270px;
+        top: 210px;
         left: -85px;
     }
 
