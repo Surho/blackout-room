@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/swiper.css">
 	<title>Blackout-Room</title>
 </head>
 
@@ -103,7 +102,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="rooms__list">
+		<!-- <div class="rooms__list">
 			<div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
 				<div class="rooms__item-description">
 					<h3>Chambre
@@ -146,6 +145,58 @@
 					de Lunncio” spécialisé dans la transmutation de cellules humaines...</p>
 				</div>
 			</div>
+		</div> -->
+		<div class="rooms__list swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
+						<div class="rooms__item-description">
+							<h3>Chambre
+								<span>1408</span>
+							</h3>
+							<div class="rooms__stats">
+								<p class="rooms__people">3-5</p>
+								<p class="rooms__time">60</p>
+								<div class="rooms__languages">
+									<p class="rooms__lang">fr</p>
+									<p class="rooms__lang">eng</p>
+									<p class="rooms__lang">ru</p>
+								</div>
+							</div>
+						</div>
+						<a class="rooms__reserve" href="chambre1408.html">En savoir plus</a>
+						<div class="rooms__about">
+							<p>Le Dolphin Hotel existe depuis plus d’un siècle et accueille des touristes de tout coin du monde. Quand vous êtes
+								arrivés, il n’y avait plus de places disponibles...</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="rooms__item rooms__item--expiriance difficulty difficulty--medium">
+						<div class="rooms__item-description">
+							<h3>Expérience
+								<span>Inachevée</span>
+							</h3>
+							<div class="rooms__stats">
+								<p class="rooms__people">3-7</p>
+								<p class="rooms__time">60</p>
+								<div class="rooms__languages">
+									<p class="rooms__lang">fr</p>
+									<p class="rooms__lang">eng</p>
+									<p class="rooms__lang">ru</p>
+								</div>
+							</div>
+						</div>
+						<a class="rooms__reserve" href="expiriance-inacheve.html">En savoir plus</a>
+						<div class="rooms__about">
+							<p>Le Docteur Canavero, un chercheur italien de renommée, s’est fait virer il y a 2 mois de cela du fameux “laboratoire
+							de Lunncio” spécialisé dans la transmutation de cellules humaines...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-scrollbar"></div>
 		</div>
 	</section>
 	<section class="price">
@@ -316,8 +367,7 @@
 		</div>
 	</div>
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="slick/slick.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/scrollTo.js"></script>

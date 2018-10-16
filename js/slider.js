@@ -1,40 +1,46 @@
-let currentWidth = document.documentElement.clientWidth;
-let sliderMode = false;
+  
+var screenWidth = document.documentElement.clientWidth;
+var sliderOn = true;
 
-$(document).ready(function() {
-  $('.rooms__list').slick({
-    centerMode: true,
-    slidesToShow: 1,
-    arrows: false,
-    infinite: true
-  });
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: '2',
+  centeredSlides: true,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
 
-//   sliderMode = true;
+if (screenWidth > 730) {
+  swiper.destroy(true, true);
+  sliderOn = false;
+  document.body.classList.add('slider-off');
+}
 
-//   if(currentWidth > 545) {
-//     $('.rooms__list').slick('unslick');
-//     sliderMode = false;
-//   }
-// });
+window.addEventListener('resize', () => {
+  screenWidth = document.documentElement.clientWidth;
 
+  if(screenWidth > 730 && sliderOn) {
+    swiper.destroy(false, true);
+    sliderOn = false;
+    document.body.classList.add('slider-off');
+  }
+  
+  if(screenWidth < 730 && !sliderOn) {
+    swiper = new Swiper('.swiper-container', {
+      slidesPerView: '2',
+      centeredSlides: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 
+    sliderOn = true;
+    document.body.classList.remove('slider-off');
+  }
+});
 
-//   window.addEventListener('resize', () => {
-//     currentWidth = document.documentElement.clientWidth;
-//     if(currentWidth > 545 && sliderMode) {
-//       $('.rooms__list').slick('unslick');
-//       sliderMode = false;
-//     } 
-
-//     if(currentWidth < 545 && !sliderMode) {
-//       $('.rooms__list').slick({
-//         centerMode: true,
-//         slidesToShow: 1,
-//         arrows: false ,
-//         infinite: true
-//       });
-//       sliderMode = true;
-//     } 
-
-//   })
