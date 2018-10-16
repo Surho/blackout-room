@@ -443,7 +443,7 @@ body {
   width: 100%; }
 
 body.gift-page {
-  min-width: 320px; }
+  min-width: 375px; }
 
 h2 {
   font-family: "codePro", "Geneva", "sans-serif"; }
@@ -462,9 +462,9 @@ h2 {
   body.gift-page {
     min-width: 768px; } }
 
-@media (max-width: 336px) {
+@media (max-width: 375px) {
   body.gift-page {
-    min-width: 336px; } }
+    min-width: 375px; } }
 
 .container {
   box-sizing: border-box;
@@ -485,10 +485,10 @@ h2 {
     padding: 0 50px;
     margin: 0 auto; } }
 
-@media (max-width: 336px) {
+@media (max-width: 375px) {
   .gift-page .container {
-    width: 320px;
-    padding: 0 10px;
+    width: 375px;
+    padding: 0 20px;
     margin: 0 auto; } }
 
 .rooms {
@@ -2450,7 +2450,7 @@ address {
     padding-bottom: 200px;
     margin-bottom: 50px; } }
 
-@media all and (max-width: 336px) {
+@media all and (max-width: 375px) {
   .gift__title,
   .gift__text {
     width: 100%;

@@ -11,7 +11,7 @@ body {
 }
 
 body.gift-page {
-    min-width: 320px;
+    min-width: 375px;
 }
 
 h2 {
@@ -39,8 +39,8 @@ h2 {
     }
 }
 
-@media(max-width: 336px) {
+@media(max-width: 375px) {
     body.gift-page {
-        min-width: 336px;
+        min-width: 375px;
     }
 }
