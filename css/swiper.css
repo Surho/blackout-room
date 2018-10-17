@@ -9,8 +9,7 @@
  *
  * Released on: September 14, 2018
  */
-.swiper-container {
-  height: 300px;		
+.swiper-container {	
   margin: 0 auto;
   position: relative;
   overflow: hidden;

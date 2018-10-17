@@ -10,6 +10,25 @@
     padding-left: 30%;
 }
 
+.room__next {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-family: "codePro", "Geneva", "sans-serif";
+    font-weight: bold;
+}
+
+.room__next span {
+    font-size: 34px;
+}
+
+.room__next:hover {
+    color: yellow;
+}
+
 .room__main {
     width: 100%;
 }
@@ -124,8 +143,8 @@
 }
 
 .room-page--expiriance .room__difficulty {
-    color: red;
-    border: 2px solid red;
+    color: yellow;
+    border: 2px solid yellow;
 }
 
 .room__people,
@@ -266,6 +285,21 @@
 
     .room__gift {
         margin-left: 0px !important;
+    }
+
+    .room__next {
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        font-family: "codePro", "Geneva", "sans-serif";
+        font-weight: bold;
+    }
+    
+    .room__next span {
+        font-size: 24px;
     }
 }
 

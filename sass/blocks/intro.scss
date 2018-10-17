@@ -146,6 +146,10 @@
     flex-wrap: wrap;
 	align-items: center;
 	padding: 0px 30px;
+
+	@media(max-width: 768px) {
+		padding: 0px 10px;
+	}
  }
 
  .intro--index .intro__wrapper {
@@ -219,12 +223,6 @@
 		top: 0;
 	}
 }
-
-// .intro--rooms .intro__logo-brain {
-// 	@media (max-width: 768px) {
-// 		display: none;
-// 	}
-// }
 
 .intro__main {
 	margin-top: 150px;
@@ -340,45 +338,25 @@
 	}
 }
 
+
 @media(max-width: 768px) {
 	.intro__switch {
 		display: block;
 	}
-}
 
+	.gift-page .intro__switch {
+		position: relative;
+		display: block;
+		align-self: flex-start;
+	}
 
-.intro__header--sticky {
-	@media(max-width: 768px) {
-		.intro__wrapper  {
-			flex-direction: row;
-			align-items: center;
-		}
-
-		.intro__logo {
-			margin-top: 0;
-			width: 130px;
-			height: 80px;
-		}
-
-		.intro__logo-text {
-			display: block;
-			z-index:9999;
-		}
-
-		.intro .intro__logo-brain {
-			width: 90px;
-			height: 80px;
-			left: 20px;
-			z-index:9999;
-		}
-
-		.intro__switch {
-			margin-top: 0;
-			top: 50%;
-			transform: translateY(-50%);
-		}
+	.opened__menu .gift-page .intro__switch {
+		position: fixed;
+		top: 20px;
+		right: 50px;
 	}
 }
+
 
 @keyframes bgZoom {
 	0% {transform: scale(1);}
