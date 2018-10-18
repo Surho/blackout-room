@@ -8,6 +8,7 @@ var run = require('run-sequence');
 var del = require('del');
 var browserSync = require('browser-sync').create();
 
+ 
 gulp.task('serve', ['style'], function() {
 
     browserSync.init({
@@ -37,7 +38,8 @@ gulp.task('copy', function() {
       'fonts/**/*.{woff,woff2}',
       'img/**/*.{jpg,webp,svg,png}',
       'js/**',
-      'css/**/*'
+      'css/**/*',
+      '*.php'
     ], {
       base: '.'
     })
