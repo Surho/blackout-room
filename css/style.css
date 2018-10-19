@@ -313,7 +313,7 @@
     width: 25px;
     height: 2px;
     background: #ffffff;
-    box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff; }
+    box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff; }
   .opened__menu .intro__switch::before {
     display: none; }
   @media (max-width: 768px) {
@@ -702,7 +702,7 @@ ul {
   font-size: 0;
   background-color: transparent;
   box-shadow: none;
-  z-index: 9999; }
+  z-index: 20; }
 
 .rooms__about {
   width: 80%;
@@ -774,7 +774,7 @@ ul {
 
 @media (max-width: 568px) {
   .rooms {
-    padding-top: 40px;
+    padding-top: 47px;
     padding-bottom: 40px; }
   .rooms__item {
     width: 80%;
@@ -832,12 +832,12 @@ ul {
   .rooms__stats > * {
     margin-bottom: 12px; }
   .rooms__item-description {
-    margin-top: 40px; } }
+    margin-top: 80px; } }
 
 @media (max-width: 380px) {
   .rooms__item h3 {
     font-size: 15px;
-    padding-left: 35px;
+    padding-left: 50px;
     margin-bottom: 5px; }
   .rooms__stats .rooms__lang {
     font-size: 12px;
@@ -848,18 +848,18 @@ ul {
     margin: 0; }
   .rooms__stats {
     padding-top: 0;
-    padding-left: 28px;
+    padding-left: 40px;
     font-size: 14px; }
   .rooms__stats > * {
     margin-bottom: 10px; }
   .rooms__item--chambre h3::after {
     height: 45px;
     width: 45px;
-    left: -6px; }
+    left: 0px; }
   .rooms__item--expiriance h3::after {
     height: 45px;
     width: 45px;
-    left: -12px; }
+    left: 0px; }
   .rooms__languages {
     font-size: 12px; }
   .rooms__people::before {
@@ -2398,7 +2398,7 @@ address {
   box-sizing: border-box;
   position: relative;
   padding-left: 300px;
-  padding-bottom: 400px; }
+  padding-bottom: 300px; }
 
 .gift__title {
   margin: 0;
@@ -2433,7 +2433,7 @@ address {
 
 .gift__img {
   position: absolute;
-  top: -70px;
+  top: -79px;
   left: -420px; }
 
 .gift__button {
@@ -2467,7 +2467,7 @@ address {
     position: absolute;
     width: 600px;
     height: auto;
-    top: 30px;
+    top: 60px;
     left: -140px; }
   .gift__title {
     margin: 0;
@@ -2485,9 +2485,8 @@ address {
   .gift__intro {
     box-sizing: border-box;
     position: relative;
-    padding-left: 250px;
-    padding-bottom: 200px;
-    margin-bottom: 50px; } }
+    padding-left: 257px;
+    padding-bottom: 200px; } }
 
 @media all and (max-width: 375px) {
   .gift__title,
@@ -2497,7 +2496,7 @@ address {
   .gift__img {
     width: 380px;
     position: absolute;
-    top: 210px;
+    top: 230px;
     left: -85px; }
   .gift__intro {
     padding-left: 0px;
@@ -2543,3 +2542,31 @@ address {
 
 .breadcrumbs li:last-child::after {
   content: ""; }
+
+.hunter-gift {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 0px;
+  background: #7c6bff;
+  z-index: 999;
+  opacity: 0.9; }
+
+.hunter-gift:hover {
+  opacity: 1; }
+
+.hunter-gift img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.hunter-gift:hover img {
+  transform: translate(-50%, -50%); }
+
+.licance {
+  display: none; }

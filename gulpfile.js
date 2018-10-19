@@ -7,7 +7,14 @@ var rename = require('rename');
 var run = require('run-sequence');
 var del = require('del');
 var browserSync = require('browser-sync').create();
+var cleanCSS = require('gulp-clean-css');
 
+
+gulp.task('minify-css', () => {
+  return gulp.src('css/*.css')
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('css'));
+});
  
 gulp.task('serve', ['style'], function() {
 

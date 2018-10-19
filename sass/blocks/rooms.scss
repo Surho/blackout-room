@@ -258,7 +258,7 @@
     font-size: 0;
     background-color: transparent;
     box-shadow: none;
-    z-index: 9999;
+    z-index: 20;
 }
 
 .rooms__about {
@@ -372,7 +372,7 @@
 
 @media(max-width: 568px) {
     .rooms {
-        padding-top: 40px;
+        padding-top: 47px;
         padding-bottom: 40px;  
     }
 
@@ -454,14 +454,14 @@
     }
 
     .rooms__item-description {
-        margin-top: 40px;
+        margin-top: 80px;
      }
  }
 
  @media(max-width: 380px) {
     .rooms__item h3 {
         font-size: 15px;
-        padding-left: 35px;
+        padding-left: 50px;
         margin-bottom: 5px;
     }
 
@@ -480,7 +480,7 @@
 
     .rooms__stats {
         padding-top: 0;
-        padding-left:28px;
+        padding-left: 40px;
         font-size: 14px;
     }
 
@@ -491,13 +491,13 @@
     .rooms__item--chambre h3::after {
         height: 45px;
         width: 45px;
-        left: -6px;
+        left: 0px;
     }
     
     .rooms__item--expiriance h3::after {
         height: 45px;
         width: 45px;
-        left: -12px;
+        left: 0px;
     }
 
     .rooms__languages {
