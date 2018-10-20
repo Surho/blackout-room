@@ -4,7 +4,7 @@ window.onload = function() {
     document.body.classList.add('loaded');
 };
 
-let scrollBtn = document.querySelector('.scroll-home');
+const scrollBtn = document.querySelector('.scroll-home');
 let scrollBtnVisible = false;
 
 
@@ -29,12 +29,34 @@ scrollBtn.addEventListener('click', () => {
     scrollIt(0, 300, 'linear');
 });
 
-let intro = document.querySelector('.intro');
-let introArrows = intro.querySelector('.intro__arrows');
+const intro = document.querySelector('.intro');
+const introArrows = intro.querySelector('.intro__arrows');
 
 if(intro.offsetHeight < document.documentElement.clientHeight) {
     introArrows.style.display = 'none';
 }
+
+const contact = document.querySelector('.navigation__item--contact');
+let menuSwitch = document.querySelector('.intro__switch');
+let menu = document.querySelector('.navigation');
+
+contact.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    let contacts = document.querySelector('.contacts__text');
+    let contactsCoord = contacts.getBoundingClientRect().top + pageYOffset;
+
+    console.log(document.documentElement.clientWidth);
+    if(document.documentElement.clientWidth <= 768) {
+        document.body.classList.remove('opened__menu--body');
+        document.documentElement.classList.remove('opened__menu');
+        scrollIt(contactsCoord, 500, 'linear');
+        return;
+    }
+
+    scrollIt(contactsCoord, 200, 'linear');
+
+    console.log(contactsCoord );
+})
 
 
 

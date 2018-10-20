@@ -7,7 +7,7 @@
     box-sizing: border-box;
     position: relative;
     padding-left: 300px;
-    padding-bottom: 300px;
+    padding-bottom: 340px;
 }
 
 .gift__title {
@@ -55,7 +55,7 @@
 .gift__button {
     display:block;
     box-sizing: border-box;
-    width: 200px;
+    max-width: 250px;
     padding: 20px 20px;
     margin: 0 auto;
     margin-top: 70px;
@@ -114,7 +114,7 @@
         box-sizing: border-box;
         position: relative;
         padding-left: 257px;
-        padding-bottom: 200px;
+        padding-bottom: 250px;
     }
 }
 
@@ -133,6 +133,6 @@
 
     .gift__intro {
         padding-left: 0px;
-        padding-bottom: 180px;
+        padding-bottom: 240px;
     }
 }

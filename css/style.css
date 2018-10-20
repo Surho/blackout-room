@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "codePro";
   src: url("../fonts/code-pro-light.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff");
@@ -2398,7 +2397,7 @@ address {
   box-sizing: border-box;
   position: relative;
   padding-left: 300px;
-  padding-bottom: 300px; }
+  padding-bottom: 340px; }
 
 .gift__title {
   margin: 0;
@@ -2439,7 +2438,7 @@ address {
 .gift__button {
   display: block;
   box-sizing: border-box;
-  width: 200px;
+  max-width: 250px;
   padding: 20px 20px;
   margin: 0 auto;
   margin-top: 70px;
@@ -2486,7 +2485,7 @@ address {
     box-sizing: border-box;
     position: relative;
     padding-left: 257px;
-    padding-bottom: 200px; } }
+    padding-bottom: 250px; } }
 
 @media all and (max-width: 375px) {
   .gift__title,
@@ -2500,48 +2499,7 @@ address {
     left: -85px; }
   .gift__intro {
     padding-left: 0px;
-    padding-bottom: 180px; } }
-
-.breadcrumbs {
-  position: relative;
-  font-family: 'OpenSans-light', Arial, sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  z-index: 20; }
-  @media (max-width: 568px) {
-    .breadcrumbs {
-      font-size: 14px; } }
-
-.breadcrumbs ul {
-  list-style-type: none;
-  margin-right: auto; }
-
-.breadcrumbs a {
-  text-decoration: none;
-  color: #ffffff;
-  opacity: 0.9;
-  cursor: pointer; }
-
-.breadcrumbs li {
-  position: relative;
-  display: inline-block;
-  padding-right: 30px; }
-
-.breadcrumbs a:hover {
-  color: yellow;
-  opacity: 1; }
-
-.breadcrumbs li::after {
-  content: "‣";
-  font-size: 34px;
-  position: absolute;
-  top: 50%;
-  right: 7px;
-  line-height: 18px;
-  transform: translateY(-50%); }
-
-.breadcrumbs li:last-child::after {
-  content: ""; }
+    padding-bottom: 240px; } }
 
 .hunter-gift {
   position: fixed;
