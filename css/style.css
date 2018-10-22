@@ -1934,7 +1934,6 @@ address {
   background-size: 32px 20px; }
 
 .room__video {
-  border: 1px solid rgba(87, 53, 255, 0.7);
   border-radius: 2px; }
 
 .room__video:hover {
@@ -2392,6 +2391,9 @@ address {
 .gift {
   width: 100%;
   margin-top: 100px; }
+
+.gift__main {
+  margin-top: 30px; }
 
 .gift__intro {
   box-sizing: border-box;

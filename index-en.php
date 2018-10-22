@@ -28,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,6 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
     <title>Blackout-Room</title>
 </head>
 <body>
@@ -43,32 +48,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="intro__background">Zooming background</div>
 		<div class="intro__header">
 			<div class="intro__wrapper">
-				<a class="intro__logo" href="index-en.php">
+				<a class="intro__logo" href="index.html">
 					<img class="intro__logo-text" src="img/logo_main_text.svg" width="130" height="80" alt="Logo">
 					<img class="intro__logo-brain" src="img/logo_main_brain.svg" width="90" height="80" alt="Logo">
 				</a>
 				<button class="intro__switch" type="button" name="menu">&#215;</button>
 				<nav class="intro__menu navigation">
 					<ul class="navigation__list">
-						<li class="navigation__item"><a href="">Concept</a></li>
-						<li class="navigation__item"><a href="">About us</a></li>
-						<li class="navigation__item"><a href="">Gift card</a></li>
-						<li class="navigation__item"><a href="">Corporate</a></li>
-						<li class="navigation__item"><a href="">Contact</a></li>
-						<li class="navigation__item"><a href="">Q&A</a></li>
+                        <li class="navigation__item"><a>Home</a></li>
+						<li class="navigation__item"><a href="gift-card-en.html">Gift card</a></li>
+						<li class="navigation__item navigation__item--contact"><a href="">Contact</a></li>
 					</ul>
 					<div class="social intro__social">
 						<a class="social__item social__instagram" href="https://www.instagram.com/blackoutroom/">
-							<img src="img/instagram_logo.svg" width="18" height="18">
+							<img src="img/instagram_logo.svg" width="18" height="18" alt="instagram">
 						</a>
 						<a class="social__item social__facebook" href="https://www.facebook.com/BlackoutROOM/">
-							<img src="img/facebook_logo.svg" width="18" height="18">
+							<img src="img/facebook_logo.svg" width="18" height="18" alt="facebook">
 						</a>
 						<a class="social__item social__tripadvisor" href="https://www.tripadvisor.fr/Attraction_Review-g187234-d12821029-Reviews-Blackout_Room-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">
-							<img src="img/tripadvisor_logo.svg" width="18" height="18">
+							<img src="img/tripadvisor_logo.svg" width="18" height="18" alt="tripadvisor">
 						</a>
-						<a class="social__item social__lang" href="./index.php">
-                            <img src="img/frflag.svg" width="18" height="18">
+						<a class="social__item social__lang" href="./index.html">
+                            <img src="img/frflag.svg" width="18" height="18" alt="french flag">
                         </a>
 					</div>
 				</nav>
@@ -83,75 +85,85 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="intro__arrow intro__arrow--top"></div>
 		</div>
 	</section>
-	<section class="rooms">
-		<div class="container">
-				<div class="rooms__plus-container">
-						<div class="rooms__plus">
-							<img src="img/Logo1.svg">
-							<p class="rooms__plus-text">120m²<br/>Game Area</p>
-						</div>
-						<div class="rooms__plus">
-							<img src="img/Logo2.svg">
-							<p class="rooms__plus-text">2 Parking<br/>Spots</p>
-						</div>
-						<div class="rooms__plus">
-							<img src="img/Logo3.svg">
-							<p class="rooms__plus-text">Air-conditioned<br/>Space</p>
-						</div>
-						<div class="rooms__plus">
-							<img src="img/Logo4.svg">
-							<p class="rooms__plus-text">Elaborate<br/>Puzzles</p>
-						</div>
-						<div class="rooms__plus">
-							<img src="img/Logo5.svg">
-							<p class="rooms__plus-text">Gift Card<br/>Option</p>
-						</div>
-					</div>
-			<div class="rooms__info">
-				<div class="rooms__title">
-					<h2>OUR ROOMS</h2>
-					<p class="rooms__title-additional">time is running out…</p>
-				</div>
+    <section class="rooms">
+        <div class="container">
+            <div class="rooms__plus-container">
+                <div class="rooms__plus">
+                    <img src="img/Logo1.svg" alt="game area">
+                    <p class="rooms__plus-text">120m²<br/>Game Area</p>
+                </div>
+                <div class="rooms__plus">
+                    <img src="img/Logo2.svg" alt="Parking">
+                    <p class="rooms__plus-text">2 Parking<br/>Spots</p>
+                </div>
+                <div class="rooms__plus">
+                    <img src="img/Logo3.svg" alt="Air-conditioned">
+                    <p class="rooms__plus-text">Air-conditioned<br/>Space</p>
+                </div>
+                <div class="rooms__plus">
+                    <img src="img/Logo4.svg" alt="puzzles">
+                    <p class="rooms__plus-text">Elaborate<br/>Puzzles</p>
+                </div>
+                <div class="rooms__plus">
+                    <img src="img/Logo5.svg" alt="gift-card">
+                    <p class="rooms__plus-text">Gift Card<br/>Option</p>
+                </div>
+            </div>
+            <div class="rooms__info">
+                <div class="rooms__title">
+                    <h2>OUR ROOMS</h2>
+                    <p class="rooms__title-additional">time is running out…</p>
+                </div>
 				<p class="rooms__description">Each quest has its own mission and difficulty. Play the role of a young horror novel writer or become the subject of the famous Doctor Canavero’s experiments in his abandoned laboratory... 
 					Choose your mission!					
 				</p>
-			</div>
-			<div class="rooms__list">
-				<div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
-					<div class="rooms__item-info">
-						<h3>Room <br/><span>1408</span></h3>
-						<div class="rooms__stats">
-							<p class="rooms__people">3-5</p>
-							<p class="rooms__time">60</p>
-						</div>
-						<a class="rooms__reserve" href="chambre1408-en.html">Read more</a>
-					</div>
-					<div class="rooms__item-preview">
-						<div class="rooms__about">
-							<p>The Dolphin Hotel has existed for more than one century and welcomes clients from all around the world. 
-								When you arrived here, there were no rooms available...</p>
-						</div>
-					</div>
-				</div>
-				<div class="rooms__item rooms__item--expiriance difficulty difficulty--hard">
-					<div class="rooms__item-info">
-						<h3>Unachieved <span>experience</span></h3>
-						<div class="rooms__stats">
-							<p class="rooms__people">3-7</p>
-							<p class="rooms__time">60</p>
-						</div>
-						<a class="rooms__reserve" href="expiriance-inacheve-en.html">Read more</a>
-					</div>
-					<div class="rooms__item-preview">
-						<div class="rooms__about">
-							<p>Dr. Canavero, a renowned Italian researcher, was fired two months ago from the famous "Lunncio laboratory"
-								specialized in the transmutation of human cells...</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+        <div class="rooms__list">
+            <div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
+                <div class="rooms__item-description">
+                    <h3>Room
+                        <span>1408</span>
+                    </h3>
+                    <div class="rooms__stats">
+                        <p class="rooms__people">3-5</p>
+                        <p class="rooms__time">60</p>
+                        <div class="rooms__languages">
+                            <p class="rooms__lang">fr</p>
+                            <p class="rooms__lang">eng</p>
+                            <p class="rooms__lang">ru</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="rooms__reserve" href="chambre1408-en.html">En savoir plus</a>
+                <div class="rooms__about">
+                    <p>The Dolphin Hotel has existed for more than one century and welcomes clients from all around the world. 
+                        When you arrived here, there were no rooms available...</p>
+                </div>
+            </div>
+            <div class="rooms__item rooms__item--expiriance difficulty difficulty--medium">
+                <div class="rooms__item-description">
+                    <h3>Unachived 
+                        <span>expiriance</span>
+                    </h3>
+                    <div class="rooms__stats">
+                        <p class="rooms__people">3-7</p>
+                        <p class="rooms__time">60</p>
+                        <div class="rooms__languages">
+                            <p class="rooms__lang">fr</p>
+                            <p class="rooms__lang">eng</p>
+                            <p class="rooms__lang">ru</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="rooms__reserve" href="expiriance-inacheve-en.html">En savoir plus</a>
+                <div class="rooms__about">
+                    <p>Dr. Canavero, a renowned Italian researcher, was fired two months ago from the famous "Lunncio laboratory"
+                    specialized in the transmutation of human cells...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 	<section class="price">
 		<div class="container">
 			<div class="price__title">
@@ -236,19 +248,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="partners__slider">
 				<div class="partners__content">
 					<div class="parnters__item">
-						<img src="img/partner2.png">
+						<img src="img/partner2.png" alt="partner1">
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner3.png">
+						<img src="img/partner3.png" alt="partner2">>
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner1.png">
+						<img src="img/partner1.png" alt="partner3">>
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner4.png">
+						<img src="img/partner4.png" alt="partner4">>
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner5.png">
+						<img src="img/partner5.png" alt="partner5">>
 					</div>
 				</div>
 			</div>
@@ -270,13 +282,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</address>
 			<div class="social contacts__social">
 				<a class="social__item social__instagram" href="https://www.instagram.com/blackoutroom/">
-					<img src="img/instagram_logo.svg" width="22" height="22">
+					<img src="img/instagram_logo.svg" width="22" height="22" alt="instagram">
 				</a>
 				<a class="social__item social__facebook" href="https://www.facebook.com/BlackoutROOM/">
-					<img src="img/facebook_logo.svg" width="22" height="22">
+					<img src="img/facebook_logo.svg" width="22" height="22" alt="facebook">
 				</a>
 				<a class="social__item social__tripadvisor" href="https://www.tripadvisor.fr/Attraction_Review-g187234-d12821029-Reviews-Blackout_Room-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">
-					<img src="img/tripadvisor_logo.svg" width="22" height="22">
+					<img src="img/tripadvisor_logo.svg" width="22" height="22" alt="tripadvisor">
 				</a>
 			</div>
 		</div>
@@ -295,13 +307,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="container">
 			<div class="footer__wrap">
 				<div class="footer__logo">
-					<p><span>Blackout</span> room</span></p>
+					<p><span>Blackout</span> room</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 	<button class="scroll-home scroll-home--hidden">&#8896;</button>
+	<a href="gift-card.html" class="hunter-gift"><img src='img/logo_gift.svg' width="30" height="30" alt="gift">gift</a>
 
 
 	<script src="js/main.js"></script>

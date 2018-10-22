@@ -1,5 +1,5 @@
-
-<!-- // define variables and set to empty values
+<?php
+// define variables and set to empty values
 $name = $email = $theme = $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -22,19 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	'X-Mailer: PHP/' . phpversion();
 
 	if (mail($to, $theme, $message_content, $headers)) {
-		echo "<div class='info__sent'>Merci, votre message a été envoyé.</div>";
+		echo "<div class='info__sent'>Thank you, your message has been sent.</div>";
 	}
   }
 }
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-} -->
-
-
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -43,6 +36,13 @@ function test_input($data) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>Blackout-Room</title>
 </head>
 
@@ -59,35 +59,26 @@ function test_input($data) {
 				<nav class="intro__menu navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-                            <a href="./concept.html">Concept</a>
+							<a>Home</a>
 						</li>
 						<li class="navigation__item">
-							<a href="">De nous</a>
+							<a href="./gift-card.html">Cadeau</a>
 						</li>
-						<li class="navigation__item">
-							<a href="">cadeau</a>
-						</li>
-						<li class="navigation__item">
-							<a href="">Entreprises</a>
-						</li>
-						<li class="navigation__item">
-							<a href="">Contact</a>
-						</li>
-						<li class="navigation__item">
-							<a href="">FAQ</a>
+						<li class="navigation__item navigation__item--contact">
+							<a href="./gift-card.html">Contact</a>
 						</li>
 					</ul>
 					<div class="social intro__social">
 						<a class="social__item social__instagram" href="https://www.instagram.com/blackoutroom/">
-							<img src="img/instagram_logo.svg" width="18" height="18">
+							<img src="img/instagram_logo.svg" width="18" height="18" alt="Instagram">
 						</a>
 						<a class="social__item social__facebook" href="https://www.facebook.com/BlackoutROOM/">
-							<img src="img/facebook_logo.svg" width="18" height="18">
+							<img src="img/facebook_logo.svg" width="18" height="18" alt="Facebook">
 						</a>
 						<a class="social__item social__tripadvisor" href="https://www.tripadvisor.fr/Attraction_Review-g187234-d12821029-Reviews-Blackout_Room-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">
-							<img src="img/tripadvisor_logo.svg" width="18" height="18">
+							<img src="img/tripadvisor_logo.svg" width="18" height="18" alt="Tripadvisor">
 						</a>
-						<a class="social__item social__lang" href="./index-en.php"><img src="img/engflag.svg" width="18" height="18"></a>
+						<a class="social__item social__lang" href="./index-en.html"><img src="img/engflag.svg" width="18" height="18" alt="english"></a>
 					</div>
 				</nav>
 			</div>
@@ -108,23 +99,23 @@ function test_input($data) {
 		<div class="container">
 			<div class="rooms__plus-container">
 				<div class="rooms__plus">
-					<img src="img/Logo1.svg">
+					<img src="img/Logo1.svg" alt="space">
 					<p class="rooms__plus-text">120m²<br/>de Jeu</p>
 				</div>
 				<div class="rooms__plus">
-					<img src="img/Logo2.svg">
+					<img src="img/Logo2.svg" alt="parking">
 					<p class="rooms__plus-text">2 Places<br/>de Parking</p>
 				</div>
 				<div class="rooms__plus">
-					<img src="img/Logo3.svg">
+					<img src="img/Logo3.svg" alt="logo3">
 					<p class="rooms__plus-text">Espace<br/>Climatisé</p>
 				</div>
 				<div class="rooms__plus">
-					<img src="img/Logo4.svg">
+					<img src="img/Logo4.svg" alt="Enigmes sophistiquées">
 					<p class="rooms__plus-text">Enigmes<br/>sophistiquées</p>
 				</div>
 				<div class="rooms__plus">
-					<img src="img/Logo5.svg">
+					<img src="img/Logo5.svg" alt="gift-cards">
 					<p class="rooms__plus-text">Offrez un<br/>Cadeau</p>
 				</div>
 			</div>
@@ -137,42 +128,48 @@ function test_input($data) {
 					devenez des cobayes du célèbre Dr.Canavero dans son laboratoire abandonné…C’est à vous de choisir!
 				</p>
 			</div>
-			<div class="rooms__list">
-				<div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
-					<div class="rooms__item-info">
-						<h3>Chambre
-							<span>1408</span>
-						</h3>
-						<div class="rooms__stats">
-							<p class="rooms__people">3-5</p>
-							<p class="rooms__time">60</p>
-						</div>
-						<a class="rooms__reserve" href="chambre1408.html">En savoir plus</a>
-					</div>
-					<div class="rooms__item-preview">
-						<div class="rooms__about">
-							<p>Le Dolphin Hotel existe depuis plus d’un siècle et accueille des touristes de tout coin du monde. Quand vous êtes
-								arrivés, il n’y avait plus de places disponibles...</p>
+		</div>
+		<div class="rooms__list">
+			<div class="rooms__item rooms__item--chambre difficulty difficulty--medium">
+				<div class="rooms__item-description">
+					<h3>Chambre
+						<span>1408</span>
+					</h3>
+					<div class="rooms__stats">
+						<p class="rooms__people">3-5</p>
+						<p class="rooms__time">60</p>
+						<div class="rooms__languages">
+							<p class="rooms__lang">fr</p>
+							<p class="rooms__lang">eng</p>
+							<p class="rooms__lang">ru</p>
 						</div>
 					</div>
 				</div>
-				<div class="rooms__item rooms__item--expiriance difficulty difficulty--hard">
-					<div class="rooms__item-info">
-						<h3>Expérience
-							<span>Inachevée</span>
-						</h3>
-						<div class="rooms__stats">
-							<p class="rooms__people">3-7</p>
-							<p class="rooms__time">60</p>
+				<a class="rooms__reserve" href="chambre1408.html">En savoir plus</a>
+				<div class="rooms__about">
+					<p>Le Dolphin Hotel existe depuis plus d’un siècle et accueille des touristes de tout coin du monde. Quand vous êtes
+						arrivés, il n’y avait plus de places disponibles...</p>
+				</div>
+			</div>
+			<div class="rooms__item rooms__item--expiriance difficulty difficulty--medium">
+				<div class="rooms__item-description">
+					<h3>Expérience
+						<span>Inachevée</span>
+					</h3>
+					<div class="rooms__stats">
+						<p class="rooms__people">3-7</p>
+						<p class="rooms__time">60</p>
+						<div class="rooms__languages">
+							<p class="rooms__lang">fr</p>
+							<p class="rooms__lang">eng</p>
+							<p class="rooms__lang">ru</p>
 						</div>
-						<a class="rooms__reserve" href="expiriance-inacheve.html">En savoir plus</a>
 					</div>
-					<div class="rooms__item-preview">
-						<div class="rooms__about">
-							<p>Le Docteur Canavero, un chercheur italien de renommée, s’est fait virer il y a 2 mois de cela du fameux “laboratoire
-								de Lunncio” spécialisé dans la transmutation de cellules humaines...</p>
-						</div>
-					</div>
+				</div>
+				<a class="rooms__reserve" href="expiriance-inacheve.html">En savoir plus</a>
+				<div class="rooms__about">
+					<p>Le Docteur Canavero, un chercheur italien de renommée, s’est fait virer il y a 2 mois de cela du fameux “laboratoire
+					de Lunncio” spécialisé dans la transmutation de cellules humaines...</p>
 				</div>
 			</div>
 		</div>
@@ -263,19 +260,19 @@ function test_input($data) {
 			<div class="partners__slider">
 				<div class="partners__content">
 					<div class="parnters__item">
-						<img src="img/partner2.png">
+						<img src="img/partner2.png" alt="partner2">
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner3.png">
+						<img src="img/partner3.png" alt="partner3">
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner1.png">
+						<img src="img/partner1.png" alt="partner4">
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner4.png">
+						<img src="img/partner4.png" alt="partner4">
 					</div>
 					<div class="parnters__item">
-						<img src="img/partner5.png">
+						<img src="img/partner5.png" alt="partner5">
 					</div>
 				</div>
 			</div>
@@ -303,13 +300,13 @@ function test_input($data) {
 			</address>
 			<div class="social contacts__social">
 				<a class="social__item social__instagram" href="https://www.instagram.com/blackoutroom/">
-					<img src="img/instagram_logo.svg" width="22" height="22">
+					<img src="img/instagram_logo.svg" width="22" height="22" alt="Instagram">
 				</a>
 				<a class="social__item social__facebook" href="https://www.facebook.com/BlackoutROOM/">
-					<img src="img/facebook_logo.svg" width="22" height="22">
+					<img src="img/facebook_logo.svg" width="22" height="22" alt="Facebook">
 				</a>
 				<a class="social__item social__tripadvisor" href="https://www.tripadvisor.fr/Attraction_Review-g187234-d12821029-Reviews-Blackout_Room-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html">
-					<img src="img/tripadvisor_logo.svg" width="22" height="22">
+					<img src="img/tripadvisor_logo.svg" width="22" height="22" alt="Tripadvisor">
 				</a>
 			</div>
 		</div>
@@ -332,7 +329,7 @@ function test_input($data) {
 			<div class="footer__wrap">
 				<div class="footer__logo">
 					<p>
-						<span>Blackout</span> room</span>
+						Blackout<span>room</span>
 					</p>
 				</div>
 			</div>
@@ -340,17 +337,15 @@ function test_input($data) {
 	</footer>
 
 	<button class="scroll-home scroll-home--hidden">&#8896;</button>
-	<div class="preloader">
-		<div class="preloader__inner">
-		</div>
-	</div>
-
+	<a href="gift-card.html" class="hunter-gift"><img src='img/logo_gift.svg' width="30" height="30" alt="cadeu">gift</a>
+	
+	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/scrollTo.js"></script>
 	<script src="js/navCollapse.js"></script>
 	<script src="js/custom-google-map.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE6aEHJ-KfJyAOzmnIeuoZWe5vAgQkT5U&callback=initMap">
-	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE6aEHJ-KfJyAOzmnIeuoZWe5vAgQkT5U&callback=initMap"></script>
+					
 </body>
 
 </html>

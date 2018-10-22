@@ -13,7 +13,7 @@ var cleanCSS = require('gulp-clean-css');
 gulp.task('minify-css', () => {
   return gulp.src('css/*.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('./build/css'));
 });
  
 gulp.task('serve', ['style'], function() {
@@ -58,5 +58,5 @@ gulp.task('copy', function() {
   })
 
   gulp.task('finish', function(done) {
-    run('clean', 'copy', 'style', 'html', done);
+    run('clean', 'copy', 'style', 'html', 'minify-css', done);
   })
